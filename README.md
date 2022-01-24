@@ -1,10 +1,18 @@
 # 百度网盘AI大赛——图像处理挑战赛：文档摩尔纹消除第7名方案
 
-比赛链接：https://aistudio.baidu.com/aistudio/competition/detail/128/0/introduction
+比赛链接：  
+https://aistudio.baidu.com/aistudio/competition/detail/128/0/introduction
 
-基于Image Demoireing with Learnable Bandpass Filters, CVPR2020（MBCNN）实现去除摩尔纹，我们的方案在aistudio平台上的链接：https://aistudio.baidu.com/aistudio/projectdetail/3438269?_=1643006001575&contributionType=1
+基于Image Demoireing with Learnable Bandpass Filters, CVPR2020（MBCNN）实现去除摩尔纹，我们的方案在aistudio平台上的链接：  
+https://aistudio.baidu.com/aistudio/projectdetail/3438269?_=1643006001575&contributionType=1
 
-预训练参数链接：https://aistudio.baidu.com/aistudio/datasetdetail/126516
+项目中使用的数据集链接：  
+https://aistudio.baidu.com/aistudio/datasetdetail/126450  
+https://aistudio.baidu.com/aistudio/datasetdetail/120844  
+预训练参数链接：  
+https://aistudio.baidu.com/aistudio/datasetdetail/126516
+
+使用项目代码时，需注意对应好各个数据集的路径，训练时使用两个数据路径，分别做traing和test；预测时使用一个数据集。
 
 # **一、 赛题介绍**
 
