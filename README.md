@@ -4,6 +4,8 @@
 
 基于Image Demoireing with Learnable Bandpass Filters, CVPR2020（MBCNN）实现去除摩尔纹，我们的方案在aistudio平台上的链接：https://aistudio.baidu.com/aistudio/projectdetail/3438269?_=1643006001575&contributionType=1
 
+预训练参数链接：https://aistudio.baidu.com/aistudio/datasetdetail/126516
+
 # **一、 赛题介绍**
 
 1. **比赛任务**： 主要任务是建立模型，对比赛给定的带有摩尔纹的图片进行处理，消除屏摄产生的摩尔纹噪声，还原图片原本的样子，并提交模型输出的结果图片。
