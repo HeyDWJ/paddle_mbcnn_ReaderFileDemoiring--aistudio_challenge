@@ -12,7 +12,7 @@ https://aistudio.baidu.com/aistudio/datasetdetail/120844
 预训练参数链接：  
 https://aistudio.baidu.com/aistudio/datasetdetail/126516
 
-使用项目代码时，需注意对应好各个数据集的路径，训练时使用两个数据路径，分别做traing和test；预测时使用一个数据集。
+使用项目代码时，需注意对应好各个数据集的路径，训练时使用两个数据路径，分别做traing和test；预测时使用一个数据集路径。
 
 # **一、 赛题介绍**
 
