@@ -2,10 +2,7 @@
 
 比赛链接：https://aistudio.baidu.com/aistudio/competition/detail/128/0/introduction
 
-基于Image Demoireing with Learnable Bandpass Filters, CVPR2020（MBCNN）的实现，
-MBCNN作者项目链接：https://github.com/zhenngbolun/Learnbale_Bandpass_Filter
-
-我们的方案在aistudio平台上的链接：https://aistudio.baidu.com/aistudio/projectdetail/3438269?_=1643006001575&contributionType=1
+基于Image Demoireing with Learnable Bandpass Filters, CVPR2020（MBCNN）实现去除摩尔纹，我们的方案在aistudio平台上的链接：https://aistudio.baidu.com/aistudio/projectdetail/3438269?_=1643006001575&contributionType=1
 
 # **一、 赛题介绍**
 
@@ -20,22 +17,22 @@ MBCNN作者项目链接：https://github.com/zhenngbolun/Learnbale_Bandpass_Filt
     MSSSIM（Multi-Scale Structural Similarity Index）
 
 
-##读取数据集，data目录下有两个文件夹，data120844是官方的数据集，data126450是我们进行数据增强后的训练集
+### 读取数据集，data目录下有两个文件夹，data120844是官方的数据集，data126450是我们进行数据增强后的训练集
 %cd /home/aistudio/data/
-# 解压数据集1
+### 解压数据集1
 !unzip data120844/moire_train_dataset.zip
 !unzip data120844/moire_testA_dataset.zip
-# 解压数据集2
+### 解压数据集2
 !unzip data126450/moire_train_dataset_1.zip
 
 
-#安装依赖包
-!pip install x2paddle
-!pip install scikit-image
+### 安装依赖包
+!pip install x2paddle  
+!pip install scikit-image  
 !pip install colour
 
 
-# work目录下保存模型代码与模型权重参数
+### work目录下保存模型代码与模型权重参数
 %cd /home/aistudio/work/
 !unzip paddle_mbcnn.zip
 
@@ -60,8 +57,8 @@ train_main.py 与 test_main.py设置训练与测试时的参数。
 
 
 # 训练及评估
-# 运行前，安装x2paddle, colour, scikit-image
-# 训练中使用了MoireAttack生成的数据，因此training set中的psnr明显低于Test set中的psnr
+### 运行前，安装x2paddle, colour, scikit-image
+### 训练中使用了MoireAttack生成的数据，因此training set中的psnr明显低于Test set中的psnr
 %cd /home/aistudio/work/
 !python paddle_mbcnn/train_main.py
 
